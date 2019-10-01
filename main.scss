@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+}
+
+html,
+body{
+  background-color: #12193a;
+}
+
+.parallax {
+  perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin-left: -1500px;
+}
+
+.parallax__layer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  img{
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.parallax__cover{
+  background: #17204c;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 2000px;
+  z-index: 2;
+}
+
+$parallax__layers: 6;
+
+@for $i from 0 through $parallax__layers {
+  $x: ($parallax__layers - $i) / 2;
+  @if ($i %2 == 0) {
+    .parallax__layer__#{$i}{
+       transform: translateZ(-100 * $x#{px}) translateX(-11%) scale($x + 1);
+    }
+  }
+  @else {
+    .parallax__layer__#{$i}{
+       transform: translateZ(-100 * $x#{px}) translateX(19%) scale($x + 1);
+    }
+  }
+}
+// scale($x + 1);

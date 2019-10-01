@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box
+}
+
+html, body {
+  background-color: #BDBADC
+}
+
+
+.ourGoalContainer {
+  background: #17204c;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.ourGoalContainer .ourGoalText {
+  color: white;
+  width: 50%;
+  display: inline-block;
+  padding: 4%;
+  font-family: montserrat;
+}
+
+/* padding; T R B L */
+
+.ourGoalContainer .ourGoalImage {
+  width: 50%;
+  display: inline-block;
+  float: right;
+
+}
+
+
+
+
+.ourServicesContainer {
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  top: 200%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.ourServicesContainer h2 {
+  color: #17204c;
+  width: 50%;
+  display: inline-block;
+  padding: 4%;
+  font-family: montserrat;
+}
+
+.ourServicesContainer .ourServicesText {
+  color: #17204c;
+  width: 50%;
+  display: inline-block;
+  padding: 4%;
+  font-family: montserrat;
+}
+
+/* padding; T R B L */
+
+.ourServicesContainer .ourServicesImage {
+  width: 50%;
+  display: inline-block;
+  float: right;
+
+}
+
+
+
+
+.ourContactContainer {
+  background: #17204c;
+  display: block;
+  position: absolute;
+  top: 300%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+.ourContactContainer h2 {
+  color: white;
+  width: 50%;
+  display: inline-block;
+  padding: 4%;
+  font-family: montserrat;
+}
+
+
+
+
+.parallax {
+  perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  /* left: 50%; */
+  right: 0;
+  bottom: 0;
+  /* margin-left: -1500px */
+  width: 100vw;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* left: 334px; */
+}
+
+/* .parallax__layer__0 {
+  transform: translateZ(-300px) translateX(-9vw) scale(4)
+} */
+
+.parallax__layer__1 {
+  transform: translateZ(-250px)scale(4)
+}
+
+.parallax__layer__2 {
+  transform: translateZ(-200px)scale(3.2)
+}
+
+.parallax__layer__3 {
+  transform: translateZ(-150px) translateY(8%) scale(2.7)
+}
+
+.parallax__layer__4 {
+  transform: translateZ(-100px) translateX(-2%) translateY(-3%) scale(2)
+}
+
+.parallax__layer__5 {
+  transform: translateZ(-50px) translateY(0.5%) translateX(-2%) scale(1.5)
+}
+
+.parallax__layer__6 {
+  transform: translateZ(0px) translateY(7%) translateX(0%) scale(1);
+}
